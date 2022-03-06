@@ -201,9 +201,32 @@ h1 {
 
 @media only screen and (max-width:768px) {
 
+.container {
+    width: 60vw;
+    height: 70vh;
+}
+
+h1 {
+    font-size: 24px;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+form i {
+    font-size: 1rem;
+}
+.range {
+    width: 30vw;
+    height: 3px;
+}
+.music-time span {
+    font-size: 14px;
+}
 
 .navigation {
-    margin-top: 30px;
+    margin-top: 1px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,15 +235,66 @@ h1 {
 .navigation button i {
     background-color: rgba(0,0,0,0);
     border: none;
-    margin:1rem;
+    margin:0.3rem;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.5rem;
     opacity: 0.8;
 }
 
 
 .big {
     font-size: 1.5rem;
+}
+
+.loader .stroke {
+    background: #fff;
+    margin: 0 5px;
+    height: 130%;
+    width: 5px;
+    border-radius : 50px;
+    animation: loaderAnime 1.4s linear infinite;
+}
+
+
+@keyframes loaderAnime {
+    50% {
+        height: 20%;
+        background-color: gold;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}
+
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+    animation-delay: 0.12s;
+}
+.stroke:nth-child(6){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(7){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(8){
+    animation-delay: 0.3s;
+}
+
+.stroke:nth-child(9){
+    animation-delay: 0s;
 }
 
 }  
