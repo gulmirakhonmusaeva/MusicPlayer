@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background:url('background.jpg') ;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+   
+}
+
+.container {
+    width: 50vw;
+    height: 85vh;
+    -webkit-box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, -4px 14px 21px 21px rgba(0,0,0,0); 
+    box-shadow: #FFF 0 -1px 4px, #ff0 0 -2px 10px, #ff8000 0 -10px 20px, red 0 -18px 40px, -4px 14px 21px 21px rgba(0,0,0,0);
+    border-radius: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.img-container {
+    height: 15vw;
+    width: 15vw;
+    
+}
+img {
+    border-radius: 100%;
+    height: inherit;
+    width: inherit;
+    object-fit: cover;
+    animation: rotate 10s linear infinite ;
+    animation-play-state: paused;
+
+}
+
+
+.container.play .img-container img {
+    animation-play-state: running;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+h1 {
+    font-size: 2rem;
+    color: #fa4d4d;
+    font-family: sans-serif;
+    text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #d0ff00, 0 -18px 40px #F00;
+}
+
+.time-progress {
+    width: 60%;
+}
+
+.music-time {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* flex-direction: row; */
+}
+
+.range {
+    width:15vw;
+    cursor:pointer;
+}
+
+.progress-container {
+    background-color: rgb(253, 253, 253);
+    height: 4px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  
+  .progress {
+    background-color: rgb(255, 38, 0);
+    width: 0%;
+    height: inherit;
+    border-radius: 15px;
+  }
+
+
+.navigation {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation button {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin: auto 1rem;
+    cursor: pointer;
+    font-size: 2rem;
+    opacity: 0.8;
+}
+
+
+.big {
+    font-size: 2.3rem;
+}
+ 
+.loader {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader .stroke {
+    background: #fff;
+    margin: 0 10px;
+    height: 130%;
+    width: 5px;
+    border-radius : 50px;
+    animation: loaderAnime 1.4s linear infinite;
+}
+
+@keyframes loaderAnime {
+    50% {
+        height: 20%;
+        background-color: gold;
+    }
+
+    100% {
+        height: 100%;
+    }
+}
+
+.stroke:nth-child(1){
+    animation-delay: 0s;
+}
+
+.stroke:nth-child(2){
+    animation-delay: 0.3s;
+}
+.stroke:nth-child(3){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(4){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(5){
+    animation-delay: 0.12s;
+}
+.stroke:nth-child(6){
+    animation-delay: 0.9s;
+}
+.stroke:nth-child(7){
+    animation-delay: 0.6s;
+}
+.stroke:nth-child(8){
+    animation-delay: 0.3s;
+}
+
+.stroke:nth-child(9){
+    animation-delay: 0s;
+}
+
+.own {
+    font-size: 1.3rem;
+    color:rgb(255, 174, 0);
+     text-shadow: 0 -1px 4px #FFF, 0 -2px 10px #ff0, 0 -10px 20px #d0ff00, 0 -18px 40px #F00;
+     font-family: 'Gloria Hallelujah', handwriting;
+     font-weight: bold;
+     letter-spacing: 1.5px;
+}
+
+.own i {
+    font-size: 1.5rem;
+    transition: .3s ;
+}
+
+.own i:hover {
+    color: black;
+}
+
+@media only screen and (max-width:768px) {
+
+
+.navigation {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation button i {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    margin:1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+
+.big {
+    font-size: 1.5rem;
+}
+
+}  

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container" id="container">
+        <h1 class="title" id="title">Ending - Isak Danielson</h1>
+        <div class="img-container">
+            <img src="img/titanic.jpg" alt="" id="cover">
+        </div>
+
+        <form> 
+            <i class="fas fa-volume-mute"></i>
+            <input  class="range" type="range" min="1" max="100" step="1" name="" id="range">
+            <i class="fas fa-volume-up"></i>
+        </form>
+        
+      <div class="time-progress">
+        <div class="music-time" >
+            <span id="start">00:00</span>
+            <span id="end">00:00</span>
+        </div>
+        <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+        </div>
+      </div>
+
+        <audio src="musics/titanic.mp3" id="audio"></audio>
+
+        <div class="navigation">
+           <button id="prew"> <i class="fas fa-backward"></i></button>
+           <button id="play"><i class="fas fa-play big"></i></button>
+           <button id="next"> <i class="fas fa-forward"></i></button>
+        </div>
+
+        <div class="wave" id="wave">
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+            <span class="stroke"></span>
+        </div>
+    </div>
+    <span class="own">Musaeva Gulmira  <a href="https://github.com/gulmirakhonmusaeva"> <i class="fa-brands fa-github"></i></a></span>
+   
+    <!-- js -->
+    <script src="app.js"></script>
+</body>
+</html>
